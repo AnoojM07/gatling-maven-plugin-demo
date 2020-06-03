@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Publish Report') {
+      steps {
+        sh 'gatlingArchive()'
+      }
+    }
+
   }
 }
